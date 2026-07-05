@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lesson 1 — Korean Topic Marker &amp; Compliments</title>
+  <title>Lesson 2 — Happy, 너무 &amp; Weather Slang (Korean)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Patrick+Hand&family=Kalam:wght@300;400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
@@ -879,6 +879,17 @@
     .doodle-1 { top: 8%; right: 5%; transform: rotate(15deg); }
     .doodle-2 { bottom: 12%; left: 3%; transform: rotate(-10deg); font-size: 2.5rem; }
 
+    .lesson-block-title {
+      font-family: 'Caveat', cursive;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--marker-purple);
+      margin: 1.75rem 0 .65rem;
+      padding-bottom: .2rem;
+      border-bottom: 2px dashed rgba(124, 58, 237, .25);
+    }
+    .lesson-block-title:first-of-type { margin-top: .75rem; }
+
   </style>
 </head>
 <body>
@@ -893,21 +904,21 @@
   <header>
     <div class="lesson-picker board-picker" id="lessonPicker">
         <button type="button" class="lesson-picker-btn" id="lessonPickerBtn" aria-expanded="false" aria-haspopup="listbox">
-        📌 Lesson 1
+        📌 Lesson 2
         <span class="lesson-picker-chevron" aria-hidden="true">▾</span>
       </button>
       <ul class="lesson-picker-menu" id="lessonPickerMenu" role="listbox">
-        <li class="current" role="option" aria-selected="true">
+        <li role="option">
           <a href="index.html">Lesson 1 — Topic Marker &amp; Compliments</a>
         </li>
-        <li role="option">
+        <li class="current" role="option" aria-selected="true">
           <a href="lesson-2.html">Lesson 2 — Happy, 너무 &amp; Weather</a>
         </li>
       </ul>
     </div>
-    <h1>Topic Marker &amp; Compliments</h1>
-    <p class="subtitle">Learn <span class="ko">너는</span> + description — praise someone in Korean</p>
-    <p class="board-date">Topic: Korean Particles &amp; Simple Compliments · <a href="../index.html" style="color:var(--marker-blue)">← Polish course</a></p>
+    <h1>Happy, <span class="ko">너무</span> &amp; Weather Slang</h1>
+    <p class="subtitle">Say how happy you are, praise someone as <em>too perfect</em>, and complain about the weather</p>
+    <p class="board-date">Topic: Feelings, Intensifiers &amp; Casual Slang · <a href="../index.html" style="color:var(--marker-blue)">← Polish course</a></p>
   </header>
 
   <div class="progress-wrap" id="progressWrap" aria-live="polite" hidden>
@@ -931,7 +942,7 @@
             <span class="picker-current">Basic — quick overview</span>
           </li>
           <li role="option">
-            <a href="lesson-1-theory.html">Full explanation →</a>
+            <a href="lesson-2-theory.html">Full explanation →</a>
           </li>
         </ul>
       </div>
@@ -939,78 +950,121 @@
     <div class="summary-grid">
       <div class="summary-item">
         <span class="summary-num">1</span>
-        <div><strong>Particles:</strong> Korean attaches particles to words like <em>I</em> and <em>You</em> to show what the sentence is about.</div>
+        <div><strong>Happy:</strong> <em class="ko">나</em> + <em class="ko">너무</em> + <em class="ko">기뻐</em> — “I’m so happy.”</div>
       </div>
       <div class="summary-item">
         <span class="summary-num">2</span>
-        <div><strong>Topic marker:</strong> <em class="ko">는</em> — one of the most common particles (topic marker).</div>
+        <div><strong>Superlative:</strong> <em class="ko">세상에서 제일</em> — the most in the world.</div>
       </div>
       <div class="summary-item">
         <span class="summary-num">3</span>
-        <div><strong>Structure:</strong> <em class="ko">너는</em> + description — “You” + compliment.</div>
+        <div><strong><em class="ko">너무</em>:</strong> too / so much — with adjectives &amp; verbs.</div>
       </div>
       <div class="summary-item">
         <span class="summary-num">4</span>
-        <div><strong>Pattern:</strong> The beginning <em class="ko">너는</em> stays the same — only the description changes.</div>
+        <div><strong>Weather:</strong> <em class="ko">너무 더워 / 추워</em> — too hot / too cold.</div>
       </div>
       <div class="summary-item">
         <span class="summary-num">5</span>
-        <div><strong>Compliments:</strong> <em class="ko">최고야, 대단해, 아름다워</em> — you are the best / amazing / beautiful.</div>
+        <div><strong>Slang:</strong> <em class="ko">~ 같네</em> — “is like…” (casual complaint).</div>
       </div>
     </div>
 
+    <h3 class="lesson-block-title">1 · Happy — <em class="ko">나 너무 기뻐</em></h3>
     <div class="pattern-box">
-      <p class="muted" style="margin-bottom:.5rem">The core pattern</p>
+      <p class="muted" style="margin-bottom:.5rem">How happy you feel</p>
       <div class="pattern-formula">
-        <span class="ko">너는</span><span class="plus">+</span><span>description</span>
+        <span class="ko">나</span><span class="plus">+</span><span class="ko">너무</span><span class="plus">+</span><span class="ko">기뻐</span>
       </div>
-      <p class="muted" style="margin-top:.5rem;margin-bottom:0"><em class="ko">너는</em> = You (as for you / when it comes to you)</p>
+      <p class="muted" style="margin-top:.75rem;margin-bottom:0"><em class="ko">기뻐</em> = happy (informal) · <em class="ko">나 너무 기뻐</em> = I’m so happy</p>
+    </div>
+    <div class="summary-grid">
+      <div class="summary-item"><span class="summary-num ko">→</span><div><em class="ko">기뻐</em> — happy</div></div>
+      <div class="summary-item"><span class="summary-num ko">→</span><div><em class="ko">나 너무 기뻐</em> — I’m so happy</div></div>
+      <div class="summary-item"><span class="summary-num ko">→</span><div><em class="ko">나 세상에서 제일 기뻐</em> — I’m the happiest in the world</div></div>
     </div>
 
-    <h3>Key particle</h3>
-    <div class="gender-rule">
-      <div class="gender-chip m" style="border-color:var(--marker-purple);color:var(--marker-purple)"><strong class="ko">는</strong> topic marker<br>너<strong>는</strong></div>
-      <div class="gender-chip f" style="grid-column:span 2;border-color:var(--marker-blue);color:var(--marker-blue)"><strong class="ko">너는</strong> = You<br><span style="font-size:.85rem">Ty / jeśli chodzi o ciebie</span></div>
+    <h3 class="lesson-block-title">2 · <em class="ko">너무</em> — too / so much</h3>
+    <p class="muted">Use <em class="ko">너무</em> before an adjective or verb to say <strong>too</strong> or <strong>so</strong>.</p>
+    <div class="pattern-box">
+      <div class="pattern-formula">
+        <span class="ko">너</span><span class="plus">+</span><span class="ko">너무</span><span class="plus">+</span><span class="ko">완벽해</span>
+      </div>
+      <p class="muted" style="margin-top:.75rem;margin-bottom:0"><em class="ko">너 너무 완벽해</em> = You are so perfect / too perfect</p>
     </div>
+    <p class="muted" style="margin-top:.75rem">In casual speech you can <strong>stretch</strong> the vowels for emphasis: <em class="ko">너 너어어어어어무 완벽하잖아</em> — “You’re sooooo perfect, you know!” (<em class="ko">하잖아</em> = you know / right?)</p>
+
+    <h3 class="lesson-block-title">3 · Weather — hot, cold &amp; Konglish</h3>
+    <div class="gender-rule">
+      <div class="gender-chip m" style="border-color:var(--marker-orange);color:var(--marker-orange)"><strong class="ko">너무 더워</strong><br>It’s too hot</div>
+      <div class="gender-chip f" style="border-color:var(--marker-blue);color:var(--marker-blue)"><strong class="ko">너무 추워</strong><br>It’s too cold</div>
+      <div class="gender-chip m" style="border-color:var(--marker-purple);color:var(--marker-purple)"><strong class="ko">너무 핫해</strong><br>too hot (Konglish)</div>
+    </div>
+
+    <h3 class="lesson-block-title">4 · Slang — <em class="ko">~ 같네</em> (“is like…”)</h3>
+    <p class="muted">Casual way to say something is awful — literally “is like a …”</p>
+    <div class="summary-grid">
+      <div class="summary-item"><span class="summary-num ko">→</span><div><em class="ko">날씨 거지 같네</em> — The weather is awful (lit. like a beggar)</div></div>
+      <div class="summary-item"><span class="summary-num ko">→</span><div><em class="ko">내 이웃 그지 같네</em> — My neighbor is awful</div></div>
+      <div class="summary-item"><span class="summary-num ko">→</span><div><em class="ko">개 같네</em> — awful / “like a dog” (strong slang)</div></div>
+    </div>
+    <p class="muted" style="margin-top:.5rem"><em class="ko">거지</em> = beggar · <em class="ko">이웃</em> = neighbor · <em class="ko">개</em> = dog</p>
   </section>
 
   <!-- EXAMPLES (tap to reveal) -->
   <section id="examples">
-    <h2><span class="icon">💬</span> Compliment Examples</h2>
+    <h2><span class="icon">💬</span> Example Sentences</h2>
     <p class="muted">Tap each card to reveal the Korean translation.</p>
 
     <div class="example-pair">
       <div class="example-card" onclick="reveal(this)">
-        <div class="example-en">You are the best.</div>
-        <div class="example-pl ko">너는 최고야</div>
-        <div class="example-hint">Jesteś najlepsza / najlepszy.</div>
+        <div class="example-en">I'm so happy.</div>
+        <div class="example-pl ko">나 너무 기뻐</div>
+        <div class="example-hint">Jestem taka szczęśliwa.</div>
       </div>
       <div class="example-card" onclick="reveal(this)">
-        <div class="example-en">You are amazing.</div>
-        <div class="example-pl ko">너는 대단해</div>
-        <div class="example-hint">Jesteś niesamowita / niesamowity.</div>
+        <div class="example-en">I'm the happiest in the world.</div>
+        <div class="example-pl ko">나 세상에서 제일 기뻐</div>
+        <div class="example-hint">Jestem najszczęśliwsza na świecie.</div>
       </div>
     </div>
     <div class="example-pair">
       <div class="example-card" onclick="reveal(this)">
-        <div class="example-en">You are beautiful.</div>
-        <div class="example-pl ko">너는 아름다워</div>
-        <div class="example-hint">Jesteś piękna / piękny.</div>
+        <div class="example-en">You are so perfect.</div>
+        <div class="example-pl ko">너 너무 완벽해</div>
+        <div class="example-hint">Jesteś taka idealna / zbyt idealna.</div>
       </div>
       <div class="example-card" onclick="reveal(this)">
-        <div class="example-en">Amazing Kuba</div>
-        <div class="example-pl ko">대단한 쿠바</div>
-        <div class="example-hint">Niesamowity Kuba. (adj. + name)</div>
+        <div class="example-en">It's too hot.</div>
+        <div class="example-pl ko">너무 더워</div>
+        <div class="example-hint">Jest zbyt gorąco.</div>
       </div>
     </div>
-    <h3>Pattern recognition</h3>
-    <p class="muted">Look — the beginning stays the same. Only the description changes.</p>
-    <div class="summary-grid">
-      <div class="summary-item"><span class="summary-num ko">→</span><div><em class="ko">너는 최고야</em> — You are the best.</div></div>
-      <div class="summary-item"><span class="summary-num ko">→</span><div><em class="ko">너는 대단해</em> — You are amazing.</div></div>
-      <div class="summary-item"><span class="summary-num ko">→</span><div><em class="ko">너는 아름다워</em> — You are beautiful.</div></div>
+    <div class="example-pair">
+      <div class="example-card" onclick="reveal(this)">
+        <div class="example-en">It's too cold.</div>
+        <div class="example-pl ko">너무 추워</div>
+        <div class="example-hint">Jest zbyt zimno.</div>
+      </div>
+      <div class="example-card" onclick="reveal(this)">
+        <div class="example-en">The weather is awful. (slang)</div>
+        <div class="example-pl ko">날씨 거지 같네</div>
+        <div class="example-hint">Pogoda jest okropna. (dosł. jak żebrak)</div>
+      </div>
     </div>
-    <p class="tap-hint">👆 <em class="ko">너는</em> = You (as for you)</p>
+    <div class="example-pair">
+      <div class="example-card" onclick="reveal(this)">
+        <div class="example-en">My neighbor is awful.</div>
+        <div class="example-pl ko">내 이웃 그지 같네</div>
+        <div class="example-hint">Mój sąsiad jest okropny.</div>
+      </div>
+      <div class="example-card" onclick="reveal(this)">
+        <div class="example-en">too hot (Konglish)</div>
+        <div class="example-pl ko">너무 핫해</div>
+        <div class="example-hint">zbyt gorąco (anglicyzm)</div>
+      </div>
+    </div>
+    <p class="tap-hint">👆 <em class="ko">너무</em> = too / so much · <em class="ko">~ 같네</em> = is like… (casual)</p>
   </section>
 
   <!-- EXERCISES -->
@@ -1024,11 +1078,11 @@
         <span class="exercise-num">Exercise 1 — What does it mean?</span>
         <span class="exercise-score" id="score1"></span>
       </div>
-      <p>What does <strong class="ko">너는</strong> mean?</p>
+      <p>What does <strong class="ko">기뻐</strong> mean?</p>
       <div class="btn-row" id="ex1-options">
-        <button class="btn" data-correct="false" onclick="pickGender(this, 1)">The most</button>
-        <button class="btn" data-correct="true" onclick="pickGender(this, 1)">You (as for you)</button>
-        <button class="btn" data-correct="false" onclick="pickGender(this, 1)">Amazing</button>
+        <button class="btn" data-correct="false" onclick="pickGender(this, 1)">Too much</button>
+        <button class="btn" data-correct="true" onclick="pickGender(this, 1)">Happy</button>
+        <button class="btn" data-correct="false" onclick="pickGender(this, 1)">Perfect</button>
       </div>
     </div>
 
@@ -1038,11 +1092,11 @@
         <span class="exercise-num">Exercise 2 — Pick the translation</span>
         <span class="exercise-score" id="score2"></span>
       </div>
-      <p>How do you say <strong>"You are the best."</strong> in Korean?</p>
+      <p>How do you say <strong>"I'm so happy."</strong> in Korean?</p>
       <div class="btn-row" id="ex2-options">
-        <button class="btn ko" data-correct="false" onclick="pickGender(this, 2)">너는 대단해</button>
-        <button class="btn ko" data-correct="true" onclick="pickGender(this, 2)">너는 최고야</button>
-        <button class="btn ko" data-correct="false" onclick="pickGender(this, 2)">너는 아름다워</button>
+        <button class="btn ko" data-correct="false" onclick="pickGender(this, 2)">너 너무 완벽해</button>
+        <button class="btn ko" data-correct="true" onclick="pickGender(this, 2)">나 너무 기뻐</button>
+        <button class="btn ko" data-correct="false" onclick="pickGender(this, 2)">너무 더워</button>
       </div>
     </div>
 
@@ -1052,20 +1106,20 @@
         <span class="exercise-num">Exercise 3 — Fill in the blank</span>
         <span class="exercise-score" id="score3"></span>
       </div>
-      <p class="fill-sentence ko"><input type="text" id="ex3-input" placeholder="..."> 최고야</p>
-      <p class="muted">"You are the best." — fill in <em>You</em> with topic marker</p>
-      <button class="btn btn-check" onclick="checkFill(3, '너는')">Check answer</button>
+      <p class="fill-sentence ko">나 <input type="text" id="ex3-input" placeholder="..."> 기뻐</p>
+      <p class="muted">"I'm <strong>so</strong> happy." — fill in <em class="ko">너무</em></p>
+      <button class="btn btn-check" onclick="checkFill(3, '너무')">Check answer</button>
     </div>
 
     <!-- Exercise 4 -->
     <div class="exercise" data-exercise="4">
       <div class="exercise-header">
-        <span class="exercise-num">Exercise 4 — Fill in the description</span>
+        <span class="exercise-num">Exercise 4 — Superlative</span>
         <span class="exercise-score" id="score4"></span>
       </div>
-      <p class="fill-sentence ko">너는 <input type="text" id="ex4-input" placeholder="..."></p>
-      <p class="muted">"You are <strong>amazing</strong>."</p>
-      <button class="btn btn-check" onclick="checkFill(4, '대단해')">Check answer</button>
+      <p class="fill-sentence ko">나 세상에서 <input type="text" id="ex4-input" placeholder="..."> 기뻐</p>
+      <p class="muted">"I'm the happiest in the world." — fill in <em>the most</em></p>
+      <button class="btn btn-check" onclick="checkFill(4, '제일')">Check answer</button>
     </div>
 
     <!-- Exercise 5 -->
@@ -1077,16 +1131,16 @@
       <p class="muted">Click English, then Korean.</p>
       <div class="match-grid">
         <div class="match-col" id="match-left">
-          <div class="match-item" data-id="a" data-pair="1">You are the best.</div>
-          <div class="match-item" data-id="b" data-pair="2">You are amazing.</div>
-          <div class="match-item" data-id="c" data-pair="3">You are beautiful.</div>
-          <div class="match-item" data-id="d" data-pair="4">Amazing Kuba</div>
+          <div class="match-item" data-id="a" data-pair="1">I'm so happy.</div>
+          <div class="match-item" data-id="b" data-pair="2">You are so perfect.</div>
+          <div class="match-item" data-id="c" data-pair="3">It's too hot.</div>
+          <div class="match-item" data-id="d" data-pair="4">It's too cold.</div>
         </div>
         <div class="match-col" id="match-right">
-          <div class="match-item ko" data-id="e" data-pair="3">너는 아름다워</div>
-          <div class="match-item ko" data-id="f" data-pair="1">너는 최고야</div>
-          <div class="match-item ko" data-id="g" data-pair="4">대단한 쿠바</div>
-          <div class="match-item ko" data-id="h" data-pair="2">너는 대단해</div>
+          <div class="match-item ko" data-id="e" data-pair="3">너무 더워</div>
+          <div class="match-item ko" data-id="f" data-pair="1">나 너무 기뻐</div>
+          <div class="match-item ko" data-id="g" data-pair="4">너무 추워</div>
+          <div class="match-item ko" data-id="h" data-pair="2">너 너무 완벽해</div>
         </div>
       </div>
     </div>
@@ -1094,14 +1148,14 @@
     <!-- Exercise 6 -->
     <div class="exercise" data-exercise="6">
       <div class="exercise-header">
-        <span class="exercise-num">Exercise 6 — The particle</span>
+        <span class="exercise-num">Exercise 6 — What is 너무?</span>
         <span class="exercise-score" id="score6"></span>
       </div>
-      <p>What is <strong class="ko">는</strong> called?</p>
+      <p>What does <strong class="ko">너무</strong> mean in this lesson?</p>
       <div class="btn-row" id="ex6-options">
-        <button class="btn" data-correct="false" onclick="pickGender(this, 6)">Subject marker</button>
-        <button class="btn" data-correct="true" onclick="pickGender(this, 6)">Topic marker</button>
-        <button class="btn" data-correct="false" onclick="pickGender(this, 6)">Object marker</button>
+        <button class="btn" data-correct="false" onclick="pickGender(this, 6)">You</button>
+        <button class="btn" data-correct="true" onclick="pickGender(this, 6)">Too / so much</button>
+        <button class="btn" data-correct="false" onclick="pickGender(this, 6)">Weather</button>
       </div>
     </div>
 
@@ -1111,33 +1165,34 @@
         <span class="exercise-num">Exercise 7 — Build the sentence</span>
         <span class="exercise-score" id="score7"></span>
       </div>
-      <p>Build: <strong>"You are beautiful."</strong></p>
+      <p>Build: <strong>"I'm so happy."</strong></p>
       <p class="muted">Drag words — or tap a word, then tap a blank.</p>
       <div class="word-bank" id="bank7">
-        <span class="word-chip ko" draggable="true" data-word="너는" data-bank="7">너는</span>
-        <span class="word-chip ko" draggable="true" data-word="아름다워" data-bank="7">아름다워</span>
-        <span class="word-chip ko" draggable="true" data-word="대단해" data-bank="7">대단해</span>
-        <span class="word-chip ko" draggable="true" data-word="최고야" data-bank="7">최고야</span>
+        <span class="word-chip ko" draggable="true" data-word="나" data-bank="7">나</span>
+        <span class="word-chip ko" draggable="true" data-word="너무" data-bank="7">너무</span>
+        <span class="word-chip ko" draggable="true" data-word="기뻐" data-bank="7">기뻐</span>
+        <span class="word-chip ko" draggable="true" data-word="완벽해" data-bank="7">완벽해</span>
       </div>
       <p class="fill-sentence">
         <span class="drop-zone" data-slot="0" data-ex="7" data-bank="7"></span>
         <span class="drop-zone" data-slot="1" data-ex="7" data-bank="7"></span>
+        <span class="drop-zone" data-slot="2" data-ex="7" data-bank="7"></span>
       </p>
-      <button class="btn btn-check" onclick="checkBuilder(7, ['너는','아름다워'])">Check answer</button>
+      <button class="btn btn-check" onclick="checkBuilder(7, ['나','너무','기뻐'])">Check answer</button>
       <button class="btn" onclick="resetBuilder(7)" style="margin-left:.5rem">Reset</button>
     </div>
 
     <!-- Exercise 8 -->
     <div class="exercise" data-exercise="8">
       <div class="exercise-header">
-        <span class="exercise-num">Exercise 8 — With or without particle?</span>
+        <span class="exercise-num">Exercise 8 — Perfect compliment</span>
         <span class="exercise-score" id="score8"></span>
       </div>
-      <p>Which sentence is <strong>correct</strong> for "You are amazing."?</p>
+      <p>Which sentence means <strong>"You are so perfect."</strong>?</p>
       <div class="btn-row" id="ex8-options">
-        <button class="btn ko" data-correct="false" onclick="pickGender(this, 8)">너 대단해</button>
-        <button class="btn ko" data-correct="true" onclick="pickGender(this, 8)">너는 대단해</button>
-        <button class="btn ko" data-correct="false" onclick="pickGender(this, 8)">는 너 대단해</button>
+        <button class="btn ko" data-correct="false" onclick="pickGender(this, 8)">나 너무 기뻐</button>
+        <button class="btn ko" data-correct="true" onclick="pickGender(this, 8)">너 너무 완벽해</button>
+        <button class="btn ko" data-correct="false" onclick="pickGender(this, 8)">날씨 거지 같네</button>
       </div>
     </div>
 
@@ -1147,22 +1202,22 @@
         <span class="exercise-num">Exercise 9 — Complete the pattern</span>
         <span class="exercise-score" id="score9"></span>
       </div>
-      <p class="fill-sentence ko"><input type="text" id="ex9a" placeholder="..." style="min-width:90px"> <input type="text" id="ex9b" placeholder="..." style="min-width:100px"></p>
-      <p class="muted">"You are beautiful." — full sentence</p>
+      <p class="fill-sentence ko">너 <input type="text" id="ex9a" placeholder="..." style="min-width:70px"> <input type="text" id="ex9b" placeholder="..." style="min-width:90px"></p>
+      <p class="muted">"You are so perfect." — full sentence</p>
       <button class="btn btn-check" onclick="checkKoSentence()">Check answer</button>
     </div>
 
     <!-- Exercise 10 -->
     <div class="exercise" data-exercise="10">
       <div class="exercise-header">
-        <span class="exercise-num">Exercise 10 — Pattern recognition</span>
+        <span class="exercise-num">Exercise 10 — Superlative phrase</span>
         <span class="exercise-score" id="score10"></span>
       </div>
-      <p>In <em class="ko">너는 최고야 / 너는 대단해 / 너는 아름다워</em> — what stays the same?</p>
+      <p>What does <strong class="ko">세상에서 제일</strong> mean?</p>
       <div class="btn-row" id="ex10-options">
-        <button class="btn ko" data-correct="true" onclick="pickGender(this, 10)">너는</button>
-        <button class="btn" data-correct="false" onclick="pickGender(this, 10)">The description</button>
-        <button class="btn ko" data-correct="false" onclick="pickGender(this, 10)">는 only</button>
+        <button class="btn" data-correct="false" onclick="pickGender(this, 10)">Too hot</button>
+        <button class="btn" data-correct="true" onclick="pickGender(this, 10)">The most in the world</button>
+        <button class="btn" data-correct="false" onclick="pickGender(this, 10)">Like a beggar</button>
       </div>
     </div>
 
@@ -1172,11 +1227,11 @@
         <span class="exercise-num">Exercise 11 — Vocabulary</span>
         <span class="exercise-score" id="score11"></span>
       </div>
-      <p>How do you say <strong>"Amazing Kuba"</strong>?</p>
+      <p>What does <strong class="ko">거지</strong> mean?</p>
       <div class="btn-row" id="ex11-options">
-        <button class="btn ko" data-correct="false" onclick="pickGender(this, 11)">너는 쿠바</button>
-        <button class="btn ko" data-correct="true" onclick="pickGender(this, 11)">대단한 쿠바</button>
-        <button class="btn ko" data-correct="false" onclick="pickGender(this, 11)">쿠바는 대단해</button>
+        <button class="btn" data-correct="false" onclick="pickGender(this, 11)">Neighbor</button>
+        <button class="btn" data-correct="true" onclick="pickGender(this, 11)">Beggar</button>
+        <button class="btn" data-correct="false" onclick="pickGender(this, 11)">Dog</button>
       </div>
     </div>
 
@@ -1189,16 +1244,16 @@
       <p class="muted">Click English, then Korean word.</p>
       <div class="match-grid">
         <div class="match-col" id="match2-left">
-          <div class="match-item" data-id="i" data-pair="1">the best</div>
-          <div class="match-item" data-id="j" data-pair="2">amazing</div>
-          <div class="match-item" data-id="k" data-pair="3">beautiful</div>
-          <div class="match-item" data-id="l" data-pair="4">you (topic)</div>
+          <div class="match-item" data-id="i" data-pair="1">weather</div>
+          <div class="match-item" data-id="j" data-pair="2">neighbor</div>
+          <div class="match-item" data-id="k" data-pair="3">dog</div>
+          <div class="match-item" data-id="l" data-pair="4">too / so much</div>
         </div>
         <div class="match-col" id="match2-right">
-          <div class="match-item ko" data-id="m" data-pair="2">대단해</div>
-          <div class="match-item ko" data-id="n" data-pair="4">너는</div>
-          <div class="match-item ko" data-id="o" data-pair="1">최고야</div>
-          <div class="match-item ko" data-id="p" data-pair="3">아름다워</div>
+          <div class="match-item ko" data-id="m" data-pair="2">이웃</div>
+          <div class="match-item ko" data-id="n" data-pair="4">너무</div>
+          <div class="match-item ko" data-id="o" data-pair="1">날씨</div>
+          <div class="match-item ko" data-id="p" data-pair="3">개</div>
         </div>
       </div>
     </div>
@@ -1209,34 +1264,34 @@
         <span class="exercise-num">Exercise 13 — Fill in the blank</span>
         <span class="exercise-score" id="score13"></span>
       </div>
-      <p class="fill-sentence ko">너는 <input type="text" id="ex13-input" placeholder="..."></p>
-      <p class="muted">"You are <strong>the best</strong>."</p>
-      <button class="btn btn-check" onclick="checkFill(13, '최고야')">Check answer</button>
+      <p class="fill-sentence ko">너무 <input type="text" id="ex13-input" placeholder="..."></p>
+      <p class="muted">"It's <strong>too hot</strong>."</p>
+      <button class="btn btn-check" onclick="checkFill(13, '더워')">Check answer</button>
     </div>
 
     <!-- Exercise 14 -->
     <div class="exercise" data-exercise="14">
       <div class="exercise-header">
-        <span class="exercise-num">Exercise 14 — Sentence structure</span>
+        <span class="exercise-num">Exercise 14 — Slang pattern</span>
         <span class="exercise-score" id="score14"></span>
       </div>
-      <p>The Korean pattern for compliments is:</p>
+      <p>What does the ending <strong class="ko">~ 같네</strong> express?</p>
       <div class="btn-row" id="ex14-options">
-        <button class="btn" data-correct="false" onclick="pickGender(this, 14)">description + 너는</button>
-        <button class="btn" data-correct="true" onclick="pickGender(this, 14)">너는 + description</button>
-        <button class="btn" data-correct="false" onclick="pickGender(this, 14)">는 + 너 + description</button>
+        <button class="btn" data-correct="false" onclick="pickGender(this, 14)">Very happy</button>
+        <button class="btn" data-correct="true" onclick="pickGender(this, 14)">Is like… (casual complaint)</button>
+        <button class="btn" data-correct="false" onclick="pickGender(this, 14)">The most in the world</button>
       </div>
     </div>
 
     <!-- Exercise 15 -->
     <div class="exercise" data-exercise="15">
       <div class="exercise-header">
-        <span class="exercise-num">Exercise 15 — Fill in the particle</span>
+        <span class="exercise-num">Exercise 15 — Weather slang</span>
         <span class="exercise-score" id="score15"></span>
       </div>
-      <p class="fill-sentence ko">너<input type="text" id="ex15-input" placeholder="..." style="min-width:50px"> 대단해</p>
-      <p class="muted">Add the <strong>topic marker</strong> after <em>너</em></p>
-      <button class="btn btn-check" onclick="checkFill(15, '는')">Check answer</button>
+      <p class="fill-sentence ko">날씨 <input type="text" id="ex15-input" placeholder="..." style="min-width:60px"> 같네</p>
+      <p class="muted">"The weather is awful." — fill in <em class="ko">거지</em> (beggar)</p>
+      <button class="btn btn-check" onclick="checkFill(15, '거지')">Check answer</button>
     </div>
 
     <!-- Exercise 16 -->
@@ -1245,18 +1300,18 @@
         <span class="exercise-num">Exercise 16 — Build the sentence</span>
         <span class="exercise-score" id="score16"></span>
       </div>
-      <p>Build: <strong>"You are amazing."</strong></p>
+      <p>Build: <strong>"It's too cold."</strong></p>
       <div class="word-bank" id="bank16">
-        <span class="word-chip ko" draggable="true" data-word="너는" data-bank="16">너는</span>
-        <span class="word-chip ko" draggable="true" data-word="대단해" data-bank="16">대단해</span>
-        <span class="word-chip ko" draggable="true" data-word="아름다워" data-bank="16">아름다워</span>
-        <span class="word-chip ko" draggable="true" data-word="최고야" data-bank="16">최고야</span>
+        <span class="word-chip ko" draggable="true" data-word="너무" data-bank="16">너무</span>
+        <span class="word-chip ko" draggable="true" data-word="추워" data-bank="16">추워</span>
+        <span class="word-chip ko" draggable="true" data-word="더워" data-bank="16">더워</span>
+        <span class="word-chip ko" draggable="true" data-word="기뻐" data-bank="16">기뻐</span>
       </div>
       <p class="fill-sentence">
         <span class="drop-zone" data-slot="0" data-ex="16" data-bank="16"></span>
         <span class="drop-zone" data-slot="1" data-ex="16" data-bank="16"></span>
       </p>
-      <button class="btn btn-check" onclick="checkBuilder(16, ['너는','대단해'])">Check answer</button>
+      <button class="btn btn-check" onclick="checkBuilder(16, ['너무','추워'])">Check answer</button>
       <button class="btn" onclick="resetBuilder(16)" style="margin-left:.5rem">Reset</button>
     </div>
 
@@ -1266,33 +1321,33 @@
         <span class="exercise-num">Exercise 17 — Choose the translation</span>
         <span class="exercise-score" id="score17"></span>
       </div>
-      <p>What does <strong class="ko">너는 아름다워</strong> mean?</p>
+      <p>What does <strong class="ko">내 이웃 그지 같네</strong> mean?</p>
       <div class="btn-row" id="ex17-options">
-        <button class="btn" data-correct="false" onclick="pickGender(this, 17)">You are amazing.</button>
-        <button class="btn" data-correct="true" onclick="pickGender(this, 17)">You are beautiful.</button>
-        <button class="btn" data-correct="false" onclick="pickGender(this, 17)">You are the best.</button>
+        <button class="btn" data-correct="false" onclick="pickGender(this, 17)">The weather is awful.</button>
+        <button class="btn" data-correct="true" onclick="pickGender(this, 17)">My neighbor is awful.</button>
+        <button class="btn" data-correct="false" onclick="pickGender(this, 17)">I'm so happy.</button>
       </div>
     </div>
 
     <!-- Exercise 18 -->
     <div class="exercise" data-exercise="18">
       <div class="exercise-header">
-        <span class="exercise-num">Exercise 18 — Match particles</span>
+        <span class="exercise-num">Exercise 18 — Match weather phrases</span>
         <span class="exercise-score" id="score18"></span>
       </div>
-      <p class="muted">Match the term with its meaning.</p>
+      <p class="muted">Match English with Korean.</p>
       <div class="match-grid">
         <div class="match-col" id="match3-left">
-          <div class="match-item" data-id="q1" data-pair="1">는</div>
-          <div class="match-item" data-id="q2" data-pair="2">너</div>
-          <div class="match-item" data-id="q3" data-pair="3">너는</div>
-          <div class="match-item ko" data-id="q4" data-pair="4">대단한</div>
+          <div class="match-item" data-id="q1" data-pair="1">It's too hot.</div>
+          <div class="match-item" data-id="q2" data-pair="2">It's too cold.</div>
+          <div class="match-item" data-id="q3" data-pair="3">too hot (Konglish)</div>
+          <div class="match-item" data-id="q4" data-pair="4">The weather is awful.</div>
         </div>
         <div class="match-col" id="match3-right">
-          <div class="match-item" data-id="q5" data-pair="2">you</div>
-          <div class="match-item" data-id="q6" data-pair="4">amazing (before noun)</div>
-          <div class="match-item" data-id="q7" data-pair="1">topic marker</div>
-          <div class="match-item" data-id="q8" data-pair="3">you (topic)</div>
+          <div class="match-item ko" data-id="q5" data-pair="2">너무 추워</div>
+          <div class="match-item ko" data-id="q6" data-pair="4">날씨 거지 같네</div>
+          <div class="match-item ko" data-id="q7" data-pair="1">너무 더워</div>
+          <div class="match-item ko" data-id="q8" data-pair="3">너무 핫해</div>
         </div>
       </div>
     </div>
@@ -1303,17 +1358,21 @@
         <span class="exercise-num">Exercise 19 — Build the sentence</span>
         <span class="exercise-score" id="score19"></span>
       </div>
-      <p>Build: <strong>"You are the best."</strong></p>
+      <p>Build: <strong>"I'm the happiest in the world."</strong></p>
       <div class="word-bank" id="bank19">
-        <span class="word-chip ko" draggable="true" data-word="너는" data-bank="19">너는</span>
-        <span class="word-chip ko" draggable="true" data-word="최고야" data-bank="19">최고야</span>
-        <span class="word-chip ko" draggable="true" data-word="대단해" data-bank="19">대단해</span>
+        <span class="word-chip ko" draggable="true" data-word="나" data-bank="19">나</span>
+        <span class="word-chip ko" draggable="true" data-word="세상에서" data-bank="19">세상에서</span>
+        <span class="word-chip ko" draggable="true" data-word="제일" data-bank="19">제일</span>
+        <span class="word-chip ko" draggable="true" data-word="기뻐" data-bank="19">기뻐</span>
+        <span class="word-chip ko" draggable="true" data-word="너무" data-bank="19">너무</span>
       </div>
       <p class="fill-sentence">
         <span class="drop-zone" data-slot="0" data-ex="19" data-bank="19"></span>
         <span class="drop-zone" data-slot="1" data-ex="19" data-bank="19"></span>
+        <span class="drop-zone" data-slot="2" data-ex="19" data-bank="19"></span>
+        <span class="drop-zone" data-slot="3" data-ex="19" data-bank="19"></span>
       </p>
-      <button class="btn btn-check" onclick="checkBuilder(19, ['너는','최고야'])">Check answer</button>
+      <button class="btn btn-check" onclick="checkBuilder(19, ['나','세상에서','제일','기뻐'])">Check answer</button>
       <button class="btn" onclick="resetBuilder(19)" style="margin-left:.5rem">Reset</button>
     </div>
 
@@ -1327,12 +1386,12 @@
         <div class="flashcard" id="flashcard" onclick="flipCard()">
           <div class="flashcard-inner">
             <div class="flashcard-front">
-              <div class="flashcard-pl ko" id="fc-front">너는</div>
+              <div class="flashcard-pl ko" id="fc-front">나 너무 기뻐</div>
               <p class="muted" style="margin-top:.5rem;font-size:.8rem">Tap to flip</p>
             </div>
             <div class="flashcard-back">
-              <div class="flashcard-en" id="fc-en">you (topic)</div>
-              <div class="flashcard-ko" id="fc-pl">Ty / jeśli chodzi o ciebie</div>
+              <div class="flashcard-en" id="fc-en">I'm so happy.</div>
+              <div class="flashcard-ko" id="fc-pl">Jestem taka szczęśliwa.</div>
             </div>
           </div>
         </div>
@@ -1384,32 +1443,42 @@
   const TOTAL_EXERCISES = 20;
 
   const vocabulary = [
-    { ko: "는", en: "topic marker", pl: "partykuła tematu" },
+    { ko: "기뻐", en: "happy (informal)", pl: "szczęśliwa / szczęśliwy" },
+    { ko: "나 너무 기뻐", en: "I'm so happy.", pl: "Jestem taka szczęśliwa." },
+    { ko: "나 세상에서 제일 기뻐", en: "I'm the happiest in the world.", pl: "Jestem najszczęśliwsza na świecie." },
+    { ko: "너무", en: "too / so much", pl: "zbyt / tak bardzo" },
     { ko: "너", en: "you", pl: "ty" },
-    { ko: "너는", en: "you (as for you)", pl: "ty / jeśli chodzi o ciebie" },
-    { ko: "너는 최고야", en: "You are the best.", pl: "Jesteś najlepsza / najlepszy." },
-    { ko: "너는 대단해", en: "You are amazing.", pl: "Jesteś niesamowita / niesamowity." },
-    { ko: "너는 아름다워", en: "You are beautiful.", pl: "Jesteś piękna / piękny." },
-    { ko: "대단한 쿠바", en: "Amazing Kuba", pl: "Niesamowity Kuba." },
-    { ko: "최고야", en: "the best (is)", pl: "jesteś najlepsza / najlepszy" },
-    { ko: "대단해", en: "amazing (is)", pl: "niesamowita / niesamowity" },
-    { ko: "대단한", en: "amazing (before noun)", pl: "niesamowity / niesamowita" },
-    { ko: "아름다워", en: "beautiful (is)", pl: "piękna / piękny" },
-    { ko: "아름다운", en: "beautiful (adj.)", pl: "piękny / piękna" },
-    { ko: "최고", en: "the best", pl: "najlepsza / najlepszy" },
+    { ko: "너 너무 완벽해", en: "You are so perfect.", pl: "Jesteś taka idealna / zbyt idealna." },
+    { ko: "완벽해", en: "perfect (is)", pl: "idealna / idealny" },
+    { ko: "완벽하잖아", en: "you're perfect, you know", pl: "jesteś idealna, wiesz" },
+    { ko: "세상에서", en: "in the world", pl: "na świecie" },
+    { ko: "제일", en: "the most / number one", pl: "najbardziej / naj-" },
+    { ko: "너무 더워", en: "It's too hot.", pl: "Jest zbyt gorąco." },
+    { ko: "너무 추워", en: "It's too cold.", pl: "Jest zbyt zimno." },
+    { ko: "너무 핫해", en: "too hot (Konglish)", pl: "zbyt gorąco (anglicyzm)" },
+    { ko: "더워", en: "hot (is)", pl: "gorąco" },
+    { ko: "추워", en: "cold (is)", pl: "zimno" },
+    { ko: "날씨", en: "weather", pl: "pogoda" },
+    { ko: "날씨 거지 같네", en: "The weather is awful. (slang)", pl: "Pogoda jest okropna." },
+    { ko: "거지", en: "beggar", pl: "żebrak" },
+    { ko: "이웃", en: "neighbor", pl: "sąsiad" },
+    { ko: "내", en: "my", pl: "mój / moja" },
+    { ko: "내 이웃 그지 같네", en: "My neighbor is awful.", pl: "Mój sąsiad jest okropny." },
+    { ko: "개", en: "dog", pl: "pies" },
+    { ko: "개 같네", en: "awful / like a dog (slang)", pl: "okropne (slang)" },
+    { ko: "같네", en: "is like… (casual ending)", pl: "jest jak… (potocznie)" },
     { ko: "나", en: "I", pl: "ja" },
-    { ko: "나는", en: "I (topic)", pl: "ja / jeśli chodzi o mnie" },
   ];
 
   const flashcards = [
-    { ko: "너는", en: "you (topic)", pl: "Ty / jeśli chodzi o ciebie" },
-    { ko: "는", en: "topic marker", pl: "partykuła tematu" },
-    { ko: "너는 최고야", en: "You are the best.", pl: "Jesteś najlepsza / najlepszy." },
-    { ko: "너는 대단해", en: "You are amazing.", pl: "Jesteś niesamowita / niesamowity." },
-    { ko: "너는 아름다워", en: "You are beautiful.", pl: "Jesteś piękna / piękny." },
-    { ko: "대단한 쿠바", en: "Amazing Kuba", pl: "Niesamowity Kuba." },
-    { ko: "대단한 / 대단해", en: "amazing", pl: "niesamowity / niesamowita" },
-    { ko: "너는 + description", en: "sentence pattern", pl: "Ty + opis" },
+    { ko: "나 너무 기뻐", en: "I'm so happy.", pl: "Jestem taka szczęśliwa." },
+    { ko: "나 세상에서 제일 기뻐", en: "I'm the happiest in the world.", pl: "Jestem najszczęśliwsza na świecie." },
+    { ko: "너무", en: "too / so much", pl: "zbyt / tak bardzo" },
+    { ko: "너 너무 완벽해", en: "You are so perfect.", pl: "Jesteś taka idealna." },
+    { ko: "너무 더워 / 추워", en: "too hot / too cold", pl: "zbyt gorąco / zimno" },
+    { ko: "날씨 거지 같네", en: "The weather is awful.", pl: "Pogoda jest okropna." },
+    { ko: "거지 / 이웃 / 개", en: "beggar / neighbor / dog", pl: "żebrak / sąsiad / pies" },
+    { ko: "너무 핫해", en: "too hot (Konglish)", pl: "zbyt gorąco (anglicyzm)" },
   ];
   let fcIndex = 0;
   const fcKnown = new Set();
@@ -1516,16 +1585,16 @@
   function checkKoSentence() {
     const a = document.getElementById('ex9a').value.trim();
     const b = document.getElementById('ex9b').value.trim();
-    const ok = a === '너는' && b === '아름다워';
+    const ok = a === '너무' && b === '완벽해';
     ['ex9a','ex9b'].forEach(id => {
       const el = document.getElementById(id);
       el.classList.remove('correct','wrong');
       el.classList.add(ok ? 'correct' : 'wrong');
     });
     const scoreEl = document.getElementById('score9');
-    scoreEl.textContent = ok ? '✓ Correct!' : '✗ Answer: 너는 아름다워';
+    scoreEl.textContent = ok ? '✓ Correct!' : '✗ Answer: 너무 완벽해';
     scoreEl.className = 'exercise-score ' + (ok ? 'correct' : 'wrong');
-    toast(ok ? '완벽해!' : 'Answer: 너는 아름다워', ok ? 'success' : 'error');
+    toast(ok ? '완벽해!' : 'Answer: 너 너무 완벽해', ok ? 'success' : 'error');
     if (ok) markComplete(9);
   }
 
@@ -1583,8 +1652,8 @@
   }
 
   setupMatch('match-left', 'match-right', 5, 4);
-  setupMatch('match2-left', 'match2-right', 6, 4);
-  setupMatch('match3-left', 'match3-right', 16, 4);
+  setupMatch('match2-left', 'match2-right', 12, 4);
+  setupMatch('match3-left', 'match3-right', 18, 4);
 
   // ─── Sentence builder (drag & drop + tap) ───
   let selectedChip = null;
