@@ -12,11 +12,11 @@
     'ㅁ', 'ㅂ', 'ㅄ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'
   ];
 
-  /* Vowels — inverse of pl-hangul VOWEL + DIGRAPHS (ja, jo, ju, wa, wo, y→ㅡ, …) */
+  /* Vowels — inverse of pl-hangul VOWEL + DIGRAPHS (ja, jo, ju, ła, ło, y→ㅡ, …) */
   const VOWEL = {
     'ㅏ': 'a', 'ㅐ': 'e', 'ㅑ': 'ja', 'ㅒ': 'je', 'ㅓ': 'o', 'ㅔ': 'e',
-    'ㅕ': 'jo', 'ㅖ': 'je', 'ㅗ': 'o', 'ㅘ': 'wa', 'ㅙ': 'we', 'ㅚ': 'we',
-    'ㅛ': 'jo', 'ㅜ': 'u', 'ㅝ': 'wo', 'ㅞ': 'we', 'ㅟ': 'wi', 'ㅠ': 'ju',
+    'ㅕ': 'jo', 'ㅖ': 'je', 'ㅗ': 'o', 'ㅘ': 'ła', 'ㅙ': 'we', 'ㅚ': 'we',
+    'ㅛ': 'jo', 'ㅜ': 'u', 'ㅝ': 'ło', 'ㅞ': 'we', 'ㅟ': 'wi', 'ㅠ': 'ju',
     'ㅡ': 'y', 'ㅢ': 'yj', 'ㅣ': 'i'
   };
 
@@ -34,13 +34,13 @@
     'ㅇ': 'ng', 'ㅈ': 't', 'ㅊ': 't', 'ㅋ': 'k', 'ㅌ': 't', 'ㅍ': 'p', 'ㅎ': 'k'
   };
 
-  /* pl-hangul: ci→ㅊㅣ, si→ㅅㅣ, zi/dzi→ㅈㅣ, nie→ㄴㅣㅔ */
+  /* pl-hangul: ć→ㅊㅣ, ś→ㅅㅣ, zi/ź→ㅈㅣ; ㅈㅣ forward = dzi (dz+i) */
   const INITIAL_VOWEL = {
-    'ㅈㅣ': 'dzi', 'ㅈㅕ': 'dżo', 'ㅈㅖ': 'dże', 'ㅈㅛ': 'dżo', 'ㅈㅠ': 'dżu',
+    'ㅈㅕ': 'dżo', 'ㅈㅖ': 'dże', 'ㅈㅛ': 'dżo', 'ㅈㅠ': 'dżu',
     'ㅈㅏ': 'dża', 'ㅈㅗ': 'dżo', 'ㅈㅜ': 'dżu', 'ㅈㅔ': 'dże', 'ㅈㅓ': 'dżo',
-    'ㅊㅣ': 'ci', 'ㅊㅕ': 'czo', 'ㅊㅖ': 'cze', 'ㅊㅛ': 'czo', 'ㅊㅠ': 'czu',
+    'ㅊㅣ': 'ć', 'ㅊㅕ': 'czo', 'ㅊㅖ': 'cze', 'ㅊㅛ': 'czo', 'ㅊㅠ': 'czu',
     'ㅊㅏ': 'cza', 'ㅊㅗ': 'czo', 'ㅊㅜ': 'czu', 'ㅊㅔ': 'cze', 'ㅊㅓ': 'czo',
-    'ㅅㅣ': 'si', 'ㅅㅕ': 'so', 'ㅅㅖ': 'se', 'ㅅㅛ': 'so', 'ㅅㅠ': 'su',
+    'ㅅㅣ': 'ś', 'ㅅㅕ': 'so', 'ㅅㅖ': 'se', 'ㅅㅛ': 'so', 'ㅅㅠ': 'su',
     'ㄴㅣㅔ': 'nie', 'ㄴㅣ': 'ni'
   };
 
@@ -94,6 +94,189 @@
       .join('')
       .replace(/\s+/g, ' ')
       .trim();
+  }
+
+  /* ─── Polish → Hangul (reverse of syllableToPolish) ─── */
+
+  const POLISH_IV = [
+    ['ła', 'ㅇ', 'ㅘ'],
+    ['ło', 'ㅇ', 'ㅝ'],
+    ['czwe', 'ㅊ', 'ㅚ'],
+    ['he', 'ㅎ', 'ㅐ'],
+    ['de', 'ㄷ', 'ㅐ'],
+    ['go', 'ㄱ', 'ㅗ'],
+    ['gat', 'ㄱ', 'ㅏ', 'ㅌ'],
+    ['dzi', 'ㅈ', 'ㅣ'], ['zi', 'ㅈ', 'ㅣ'], ['ź', 'ㅈ', 'ㅣ'],
+    ['dżo', 'ㅈ', 'ㅕ'], ['dże', 'ㅈ', 'ㅖ'], ['dża', 'ㅈ', 'ㅏ'], ['dżu', 'ㅈ', 'ㅜ'],
+    ['czo', 'ㅊ', 'ㅕ'], ['cze', 'ㅊ', 'ㅖ'], ['cza', 'ㅊ', 'ㅏ'], ['czu', 'ㅊ', 'ㅜ'],
+    ['ci', 'ㅊ', 'ㅣ'], ['ć', 'ㅊ', 'ㅣ'],
+    ['si', 'ㅅ', 'ㅣ'], ['ś', 'ㅅ', 'ㅣ'], ['so', 'ㅅ', 'ㅕ'], ['se', 'ㅅ', 'ㅖ'], ['su', 'ㅅ', 'ㅠ'],
+    ['ni', 'ㄴ', 'ㅣ']
+  ];
+
+  const POLISH_INIT = [
+    ['pp', 'ㅃ'], ['sz', 'ㅆ'], ['dz', 'ㅈ'], ['dź', 'ㅉ'], ['cz', 'ㅊ'],
+    ['g', 'ㄱ'], ['k', 'ㄱ'], ['n', 'ㄴ'], ['d', 'ㄷ'], ['r', 'ㄹ'], ['l', 'ㄹ'], ['m', 'ㅁ'],
+    ['b', 'ㅂ'], ['p', 'ㅍ'], ['s', 'ㅅ'], ['t', 'ㅌ'], ['h', 'ㅎ']
+  ];
+
+  const POLISH_VOWEL = [
+    ['yj', 'ㅢ'], ['ju', 'ㅠ'], ['jo', 'ㅕ'], ['ja', 'ㅑ'], ['je', 'ㅖ'],
+    ['ła', 'ㅘ'], ['ło', 'ㅝ'],
+    ['ą', 'ㅗ'], ['ę', 'ㅔ'], ['ó', 'ㅜ'],
+    ['a', 'ㅏ'], ['e', 'ㅔ'], ['i', 'ㅣ'], ['o', 'ㅓ'], ['u', 'ㅜ'], ['y', 'ㅡ']
+  ];
+
+  /* lone w + e/i/u = Latin w + vowel (no w in Hangul); lone j = ㅣ (mirrors pl-hangul) */
+  const POLISH_W_LATIN = { e: 'ㅔ', i: 'ㅣ', u: 'ㅜ' };
+  const POLISH_J_VOWEL = new Set(['a', 'e', 'o', 'u']);
+
+  /* t/d = ㄷ batchim; l/r = ㄹ batchim (forward: ㄷ→t, ㄹ→l; aliases accepted on input) */
+  const POLISH_FINAL = [
+    ['ng', 'ㅇ'], ['k', 'ㄱ'], ['n', 'ㄴ'], ['t', 'ㄷ'], ['d', 'ㄷ'], ['l', 'ㄹ'], ['r', 'ㄹ'], ['m', 'ㅁ'], ['p', 'ㅂ']
+  ];
+
+  function composeSyllable(initial, medial, final) {
+    const ii = INITIALS.indexOf(initial);
+    const mi = MEDIALS.indexOf(medial);
+    const fi = FINALS.indexOf(final || '');
+    if (ii < 0 || mi < 0 || fi < 0) return '';
+    return String.fromCharCode(0xAC00 + ii * 588 + mi * 28 + fi);
+  }
+
+  function canStartSyllable(s, pos) {
+    if (pos >= s.length) return false;
+    for (const [pat] of POLISH_IV) {
+      if (s.startsWith(pat, pos)) return true;
+    }
+    for (const [ip] of POLISH_INIT) {
+      if (!s.startsWith(ip, pos)) continue;
+      const after = pos + ip.length;
+      for (const [vp] of POLISH_VOWEL) {
+        if (s.startsWith(vp, after)) return true;
+      }
+    }
+    for (const [vp] of POLISH_VOWEL) {
+      if (s.startsWith(vp, pos)) return true;
+    }
+    return false;
+  }
+
+  function parseFinal(s, pos) {
+    for (const [pat, jamo] of POLISH_FINAL) {
+      if (!s.startsWith(pat, pos)) continue;
+      const after = pos + pat.length;
+      if (after < s.length && POLISH_INIT.some(([ip]) => ip === pat) && canStartSyllable(s, pos)) {
+        continue;
+      }
+      return { f: jamo, next: after };
+    }
+    return { f: '', next: pos };
+  }
+
+  function parseNextSyllable(s, pos) {
+    const options = [];
+
+    for (const entry of POLISH_IV) {
+      const [pat, ini, med, finFixed] = entry;
+      if (!s.startsWith(pat, pos)) continue;
+      if (pat === 'go' && (s.startsWith('godz', pos) || s.startsWith('goź', pos))) continue;
+      const fin = finFixed !== undefined
+        ? { f: finFixed, next: pos + pat.length }
+        : parseFinal(s, pos + pat.length);
+      options.push({ i: ini, m: med, f: fin.f, next: fin.next, len: fin.next - pos });
+    }
+
+    const tryInits = [['', 'ㅇ']].concat(POLISH_INIT);
+    for (const [ip, ini] of tryInits) {
+      if (ip && !s.startsWith(ip, pos)) continue;
+      const i1 = pos + ip.length;
+      for (const [vp, medDefault] of POLISH_VOWEL) {
+        if (!s.startsWith(vp, i1)) continue;
+        const medials = [medDefault];
+        for (const med of medials) {
+          const i2 = i1 + vp.length;
+          options.push({ i: ini, m: med, f: '', next: i2, len: i2 - pos });
+          for (const [fp, fj] of POLISH_FINAL) {
+            if (!s.startsWith(fp, i2)) continue;
+            const next = i2 + fp.length;
+            if (next < s.length && POLISH_INIT.some(([p]) => p === fp) && canStartSyllable(s, i2)) {
+              continue;
+            }
+            options.push({ i: ini, m: med, f: fj, next, len: next - pos });
+          }
+        }
+      }
+    }
+
+    if (!options.length) return null;
+    options.sort((a, b) => b.len - a.len);
+    const best = options[0];
+    return { i: best.i, m: best.m, f: best.f, next: best.next };
+  }
+
+  function polishWordToHangul(word) {
+    if (!word) return '';
+    const s = word.toLowerCase();
+    let out = '';
+    let i = 0;
+
+    while (i < s.length) {
+      if (s[i] === 'w') {
+        const next = s[i + 1];
+        if (next && POLISH_W_LATIN[next]) {
+          out += 'w' + composeSyllable('ㅇ', POLISH_W_LATIN[next], '');
+          i += 2;
+          continue;
+        }
+        out += 'w';
+        i++;
+        continue;
+      }
+
+      if (s[i] === 'j' && !POLISH_J_VOWEL.has(s[i + 1])) {
+        out += composeSyllable('ㅇ', 'ㅣ', '');
+        i++;
+        continue;
+      }
+
+      const parsed = parseNextSyllable(s, i);
+      if (!parsed) {
+        out += word[i] ?? s[i];
+        i++;
+        continue;
+      }
+      const syllable = composeSyllable(parsed.i, parsed.m, parsed.f);
+      out += syllable || s.slice(i, parsed.next);
+      i = parsed.next;
+    }
+    return out;
+  }
+
+  function polishToHangul(text) {
+    if (!text) return '';
+    return text.split('\n').map((line) =>
+      line.split(/(\s+)/).map((part) => {
+        if (/^\s+$/.test(part)) return part;
+        if (!part.trim()) return part;
+        return polishWordToHangul(part);
+      }).join('')
+    ).join('\n');
+  }
+
+  function hangulToPolishPreserve(text) {
+    if (!text) return '';
+    return text.split('\n').map((line) =>
+      line.split(/(\s+)/).map((part) => {
+        if (/^\s+$/.test(part)) return part;
+        let out = '';
+        for (const ch of part) {
+          const cp = ch.codePointAt(0);
+          out += (cp >= 0xAC00 && cp <= 0xD7A3) ? syllableToPolish(ch) : ch;
+        }
+        return out;
+      }).join('')
+    ).join('\n');
   }
 
   function wrapKoWord(display, transcript) {
@@ -201,6 +384,9 @@
 
   global.hangulToPolish = hangulToPolish;
   global.hangulToRoman = hangulToPolish;
+  global.hangulToPolishPreserve = hangulToPolishPreserve;
+  global.polishToHangul = polishToHangul;
+  global.polishWordToHangul = polishWordToHangul;
   global.formatKoreanWithRoman = formatKoreanWithRoman;
   global.annotateKoreanPage = annotateKoreanPage;
   global.koCell = koCell;
